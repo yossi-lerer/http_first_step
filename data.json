@@ -1,7 +1,9 @@
-{
-    "name_city": "Jerusalem",
-    "weather_conditions": "Sunny",
-    "temp_in_c": 28.4,
-    "humidity": 36,
-    "current_type": "1787492061.6859102"
-}
+[
+    {
+        "name_city": "Alexandria",
+        "weather_conditions": "Sunny",
+        "temp_in_c": 29.4,
+        "humidity": 61,
+        "current_type": "1787495563.6743743"
+    }
+]
