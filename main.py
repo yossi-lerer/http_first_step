@@ -2,6 +2,7 @@ from weatherapi import get_weather
 from json_holider import get_json, write_json
 from input import userinput
 from check_func import check_cashing
+from pixabay import get_pixabay
 
 def main():
     city_name = userinput()
@@ -12,11 +13,13 @@ def main():
         if check == False:
             weather = get_weather(city_name)
             print(weather)
+            get_pixabay(weather["weather_conditions"])
             get.append(weather)
             write = write_json(get)
     else:
         get = get_json()
         weather = get_weather(city_name)
+        get_pixabay(weather["weather_conditions"])
         print(weather)
         write = write_json(weather)
 main()
